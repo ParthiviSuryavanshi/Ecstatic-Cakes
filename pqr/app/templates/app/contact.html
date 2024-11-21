@@ -1,0 +1,48 @@
+{% extends 'app/base.html' %}
+{% load static  %}
+{% block title %}About{% endblock title %}
+
+{% block banner-slider %}
+ <div id="carouselExample" class="carousel slide">
+   <div class="carousel-inner">
+     <div class="carousel-item active">
+       <img src="{% static "app/images/banner/imgl.jpg" %}" class="d-block w-100 h-70" alt="banner-images">
+     </div>
+     <div class="carousel-item">
+       <img src="{% static "app/images/banner/imgj.jpg" %}" class="d-block w-100 h-70" alt="banner-images">
+     </div>
+     <div class="carousel-item">
+       <img src="{% static "app/images/banner/imga.avif" %}" class="d-block w-100 h-70" alt="banner-images">
+     </div>
+     <div class="carousel-item">
+      <img src="{% static "app/images/banner/imgi.jpg" %}" class="d-block w-100 h-70" alt="banner-images">
+    </div>
+   </div>
+   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Previous</span>
+   </button>
+   <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Next</span>
+   </button>
+ </div>
+
+{% endblock banner-slider %}
+
+{% block main-content %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center" style="color:pink; font-size:40px;">Contact Us</h2>
+    <br>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center"><b>Address :</b> Dhankawadi, Pune </p>
+        <p class="fs-4 text-center"><b>Contact :</b> 9370114226 </p>
+        <p class="fs-4 text-center"><b>Email :</b> ecstaticcakes@gmail.com </p>
+        <p class="fs-4 text-center"><b>Instagram :</b> ecstatic.cakes </p>
+    </div>
+</div>
+<br><br>
+<br><br>
+{% endblock main-content %}
